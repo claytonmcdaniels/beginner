@@ -30,6 +30,18 @@ def main():
                         nice_day()
                     else:
                         print('Wait a while! Maybe it will stop!')
+                        time.sleep (10)
+                        raining_answer = input('Is it still raining?')
+                        if (outside_answer != 'yes' and outside_answer != 'no'):
+                            print('You must answer either "yes" or "no"')
+                        # invalid operation
+                        if (raining_answer == 'no'):
+                            nice_day()
+                        else:
+                            print('You may have to wait until tomorrow')
+
+
+
 
 
 
